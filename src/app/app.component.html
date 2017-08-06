@@ -1,0 +1,20 @@
+<div class="form">
+  <div class="line">
+    <input class="name" type="text" [(ngModel)]="name">
+  </div>
+
+  <div class="line">
+    <textarea class="message" [(ngModel)]="message"></textarea>
+  </div>
+
+  <div class="line">
+    <button class="send" (click)="send(name, message)">Отправить</button>
+  </div>      
+</div>
+
+<div class="messages">
+  <div class="message" *ngFor="let message of messages | orderBy: 'fields.created_date_unix': true">
+    <strong class="name" [innerHTML]="message.fields.name"></strong>
+    <div class="text" [innerHTML]="message.fields.text"></div>
+  </div>
+</div>

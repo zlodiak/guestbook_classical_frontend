@@ -1,0 +1,33 @@
+.form{
+	width: 200px;
+	margin: auto;
+}
+
+	.line{
+		padding-bottom: 20px;
+	}
+
+	input,
+	textarea{
+		width: 100%;
+		padding: 5px;
+		display: block;
+		border: 1px solid #ccc;
+	}
+
+.messages{
+	width: 200px;
+	margin: auto;
+}	
+
+	.message{
+		padding-bottom: 20px;
+	}
+
+		.name{
+
+		}
+
+		.text{
+			
+		}
